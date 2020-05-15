@@ -40,7 +40,7 @@
 
       <button type="button" onclick="start()" id="notify" hidden>Notify</button>
       {% if user.is_authenticated %}
-      <a href="http://127.0.0.1:8000/admin/logout/">Logout</a>
+      <a href="https://pushdjango.herokuapp.com/admin/logout/">Logout</a>
       {% else %}
       <form  method="POST">
         {% csrf_token %}
