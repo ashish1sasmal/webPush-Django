@@ -9,8 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="{% static 'push/js/push.min.js' %}" charset="utf-8"></script>
-    <script src="{% static 'push/js/serviceWorker.min.js' %}" charset="utf-8"></script>
+    <script src="{% static 'js/push.min.js' %}" charset="utf-8"></script>
+    <script src="{% static 'js/serviceWorker.min.js' %}" charset="utf-8"></script>
 
     <script type="text/javascript">
 
@@ -51,14 +51,7 @@
     </div>
 
 
-
+  <!-- start webpushr code --> <script>(function(w,d, s, id) {if(typeof(w.webpushr)!=='undefined') return;w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.src = "https://cdn.webpushr.com/app.min.js";fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('init','BEpCES7hXGY1Ab2X02x_x97sI-0JR0KPdxqlSL9E-R0lRG1AYzGWNptxe_YMNemxwLFXfaelIt_oIIT_WPJGDx8');</script><!-- end webpushr code -->
     </body>
-    <!-- start webpushr code --> <script>(function(w,d, s, id) {if(typeof(w.webpushr)!=='undefined') return;w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.src = "https://cdn.webpushr.com/app.min.js";fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('init','BNYstB0MmvGSstrtseYe5p6TQsBcwdMo1ha3L2RHbsSdawZh05RXaZRgyYtjILsf7de4vEO6cmpWwHLiSM4cjbI');</script><!-- end webpushr code -->
-    <script type="text/javascript">
-      {% if notifyFlag %}
-        document.getElementById('notify').click();
-        {% endif %}
-
-    </script>
 
 </html>

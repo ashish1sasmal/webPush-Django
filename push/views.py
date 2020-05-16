@@ -21,7 +21,7 @@ def user_login(request):
                 pass
         else:
             messages.warning(request,"Wrong username or password!")
-    return render(request,"push/login.html")
+    return render(request,"login.html")
 
 def home(request):
-    return render(request,'push/home.html')
+    return render(request,'home.html')
