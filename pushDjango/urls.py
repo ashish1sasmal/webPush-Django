@@ -19,9 +19,12 @@ from push import views
 
 from django.conf import settings
 from django.conf.urls.static import static
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home,name='home'),
     path('login/',views.user_login,name='user_login'),
+    path('webpushr-sw.js', TemplateView.as_view(template_name='webpushr-sw.js', content_type='application/x-javascript'))
+
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
