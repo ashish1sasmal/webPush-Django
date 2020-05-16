@@ -19,5 +19,6 @@ from push import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.user_login,name='user_login'),
+    path('',views.home,name='home'),
+    path('login/',views.user_login,name='user_login'),
 ]
